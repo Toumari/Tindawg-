@@ -7,10 +7,6 @@ let dogsArray = dogs.map((dog) => {
 
 let dog = new Dog(dogsArray[0]);
 
-console.log(dogsArray);
-
-console.log(dog);
-
 const dogContainer = document.getElementById("swipe-section");
 const likeButton = document.getElementById("like-button");
 
@@ -22,7 +18,6 @@ document.addEventListener("click", (e) => {
   }
   if (e.target.id === "pass-button") {
     dog.setSwipedStatus();
-    console.log("Clicked");
     getNewDog();
   }
 });
