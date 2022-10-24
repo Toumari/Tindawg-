@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    text-align: left;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: .25em;
+}
+
+p {
+    margin-top: 0;
+    font-size: 1.25em;
+}
+
+
+
+/* Layout */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 2em
+}
+
+nav ul li {
+    list-style: none;
+    
+}
+
+nav img {
+    width: 30px;
+    height: auto
+}
+
+.logo {
+    width: 100px;
+    height: auto
+}
+
+.image-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 55vh;
+    border-radius: 10px;
+    margin: 1em;
+    background-size: cover;
+    background-position: center; }
+
+.swipe-section {
+    background-image: url(../images/dog-bella.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 1em;
+}
+
+.like-or-not {
+    margin: 3em 2em; 
+}
+
+.like-or-not img {
+    width: 200px;
+    height: auto;
+    transform: rotate(-20deg);
+}
+
+/* Bottom buttons */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-details {
+    color:white;
+    margin-left:2em;
+    margin-bottom: 2em;
+}
+
+.bottom-button-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.bottom-button-section img {
+    width: 3em;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 1em;
+    padding: 2em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bottom-button-section img:hover,
+.bottom-button-section img:focus {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.end-image {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+
+
+    h1 {
+        font-size: 1.75em;
+    }
+
+    .swipe-section {
+        margin: auto;
+        flex-direction: column;
+        max-width: 50vw;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bottom-button-section img {
+        width: 5em;
+        height: auto;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        margin: 1em;
+        padding: 1.5em;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
